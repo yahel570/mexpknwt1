@@ -20,12 +20,13 @@ function getTarget() {
     // Next, select randomly the index from which we will get the value from each array
     var index = Math.floor(Math.random() * preEval.length);
 
-    return({preEval: "With", Stimuli: Stimuli[index],
+    return({preEval: preEval[index], Stimuli: Stimuli[index],
 		T2Filler1Rating: T2Filler1Rating[index], T2Filler2Rating: T2Filler2Rating[index],
 		T2Filler3Rating: T2Filler3Rating[index], T2Filler4Rating: T2Filler4Rating[index],
 		T2Target1Rating: T2Target1Rating[index], T2Target2Rating: T2Target2Rating[index],
 		T2Target3Rating: T2Target3Rating[index], T2Target4Rating: T2Target4Rating[index]});
 }
+
 
 
 
