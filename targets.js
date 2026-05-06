@@ -13,12 +13,12 @@ function getTarget() {
     var T2Target4Rating = ["-1: Slightly dislike","0: Neutral","1: Slightly like","0: Neutral","0: Neutral","1: Slightly like","0: Neutral","1: Slightly like","1: Slightly like","0: Neutral","0: Neutral","1: Slightly like","0: Neutral","2: Moderately like","1: Slightly like","1: Slightly like","1: Slightly like","1: Slightly like","-1: Slightly dislike","0: Neutral","1: Slightly like","2: Moderately like","-1: Slightly dislike","-2: Moderately dislike","0: Neutral","-2: Moderately dislike","-2: Moderately dislike","-2: Moderately dislike","0: Neutral","-2: Moderately dislike","3: Like a lot","-1: Slightly dislike","0: Neutral","0: Neutral","0: Neutral","0: Neutral","1: Slightly like","3: Like a lot","0: Neutral","0: Neutral","1: Slightly like","1: Slightly like","3: Like a lot","1: Slightly like","-1: Slightly dislike","1: Slightly like","0: Neutral","-3: Dislike a lot","3: Like a lot","3: Like a lot","1: Slightly like","-2: Moderately dislike","2: Moderately like","0: Neutral","1: Slightly like","1: Slightly like","3: Like a lot","0: Neutral","-1: Slightly dislike","1: Slightly like","0: Neutral","1: Slightly like","1: Slightly like","-1: Slightly dislike","0: Neutral","0: Neutral","0: Neutral","2: Moderately like","0: Neutral","-1: Slightly dislike","1: Slightly like","0: Neutral","1: Slightly like","0: Neutral","-1: Slightly dislike","1: Slightly like","0: Neutral","0: Neutral","3: Like a lot","2: Moderately like","-1: Slightly dislike","0: Neutral","0: Neutral","1: Slightly like","3: Like a lot","2: Moderately like","0: Neutral","3: Like a lot","-3: Dislike a lot","1: Slightly like","2: Moderately like","0: Neutral","1: Slightly like","2: Moderately like","1: Slightly like","-1: Slightly dislike","0: Neutral","0: Neutral","2: Moderately like","2: Moderately like","1: Slightly like","-1: Slightly dislike","-1: Slightly dislike","1: Slightly like","-1: Slightly dislike","0: Neutral","0: Neutral","1: Slightly like","-1: Slightly dislike","0: Neutral","-2: Moderately dislike","0: Neutral","1: Slightly like","-1: Slightly dislike","2: Moderately like","3: Like a lot","2: Moderately like","3: Like a lot","3: Like a lot","0: Neutral"];
 
     // First, make sure the two arrays are the same length
-    if (preEval.length !== T2Target4Rating.length) {
+    if (T2Filler1Rating.length !== T2Target4Rating.length) {
         throw new Error('Arrays must be the same length');
     }
 
     // Next, select randomly the index from which we will get the value from each array
-    var index = Math.floor(Math.random() * preEval.length);
+    var index = Math.floor(Math.random() * T2Target4Rating.length);
 
     return({Stimuli: Stimuli[index],
 		T2Filler1Rating: T2Filler1Rating[index], T2Filler2Rating: T2Filler2Rating[index],
